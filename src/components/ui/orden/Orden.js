@@ -30,6 +30,7 @@ const Orden = ({ orden, }) => {
             ))}
              <p className="text-gray-700 font-bold" >Numero de Referencia {orden.numeroReferencia}</p>
             <p className="text-gray-700 font-bold" >Total a Pagar: Bs {orden.total} </p>
+            <p className="text-gray-700 font-bold" >Fecha: {orden.creado} </p>
             { !orden.completado && (
                 <button 
                 type="button"
