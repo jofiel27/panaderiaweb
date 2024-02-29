@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { getAuth, signOut } from "firebase/auth";
 import Swal from "sweetalert2";
+import usuario from "../assets/logo2.png"
 const Sidebar = () => {
   const auth = getAuth();
   const user = auth.currentUser;
@@ -10,29 +11,25 @@ const Sidebar = () => {
     <>
       <div className="md:w-2/5 xl:w-1/5 bg-white shadow-lg">
         <div className="p-6">
-          <p className="uppercase text-gray-700 text-2xl tracking-wide font-bold">
+        <div className="flex items-center justify-center border-4 border-gray-100 rounded-3xl">
+       <img src={usuario} alt="100" />
+       </div>
+          <p className="uppercase text-amber-700 text-2xl tracking-wide font-bold text-center pt-5">
             Soho{" "}
           </p>
 
           <nav className="mt-11">
-            <NavLink
-              className="p-1 text-gray-700 block hover:bg-amber-500"
-              end="true"
-              to="/Inicio"
-              
-            >
-              Inicio
-            </NavLink>
+          
 
             <NavLink
-              className="p-2 text-gray-700 block hover:bg-amber-500"
+              className="p-2 text-gray-700 block hover:bg-amber-500 font-bold hover:text-gray-100"
               end="true"
               to="/Pedidos"
             >
               Pedidos
             </NavLink>
             <NavLink
-              className="p-2 text-gray-700 block hover:bg-amber-500"
+              className="p-2 text-gray-700 block hover:bg-amber-500 font-bold  hover:text-gray-100"
               end="true"
               to="/Mercancia"
               onClick={() => {
@@ -50,7 +47,7 @@ const Sidebar = () => {
               Mercancia
             </NavLink>
             <NavLink
-              className="p-2 text-gray-700 block hover:bg-amber-500"
+              className="p-2 text-gray-700 block hover:bg-amber-500 font-bold  hover:text-gray-100"
               end="true"
               to="/Historial"
               onClick={() => {
@@ -68,7 +65,7 @@ const Sidebar = () => {
               Historial
             </NavLink>
             <NavLink
-              className="p-2 text-gray-700 block hover:bg-amber-500"
+              className="p-2 text-gray-700 block hover:bg-amber-500 font-bold  hover:text-gray-100"
               end="true"
               to="/Estadisticas"
               onClick={() => {
@@ -86,7 +83,7 @@ const Sidebar = () => {
               Estadísticas
             </NavLink>
             <NavLink
-            className="p-2 text-gray-700 block hover:bg-amber-500"
+            className="p-2 text-gray-700 block hover:bg-amber-500 font-bold  hover:text-gray-100"
             to="/"
             onClick={() => {
               signOut(auth)

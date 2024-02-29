@@ -36,7 +36,8 @@ const Historial = () => {
 
     return ( 
         <>
-          <h1 className ="text-3xl font-semibold text-center text-gray-700 mb-4"> 
+        <div className='bg-gradient-to-r from-yellow-600 to-amber-400 h-full'>
+          <h1 className ="text-3xl font-semibold text-center text-gray-100 mb-4 pt-5"> 
             Historial
           </h1>
           <div className="flex flex-wrap">
@@ -50,7 +51,7 @@ const Historial = () => {
           ))}
 
           </div>
-         
+          </div>
         </>
     );
 }

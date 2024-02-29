@@ -34,7 +34,8 @@ const Pedidos = () => {
 
     return ( 
         <>
-          <h1 className ="text-3xl font-semibold text-gray-700 mb-4 text-center"> 
+        <div className="bg-gradient-to-r from-yellow-600 to-amber-400 h-full">
+          <h1 className ="text-3xl font-semibold text-gray-100 mb-4 text-center pt-5"> 
           Pedidos
           </h1>
           <div className="flex flex-wrap">
@@ -48,7 +49,7 @@ const Pedidos = () => {
           ))}
 
           </div>
-         
+         </div>
         </>
     );
 }

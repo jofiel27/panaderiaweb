@@ -93,8 +93,8 @@ const handleProgress = progreso =>{
 
     return ( 
         <>
-
-      <h1 className ="text-3xl  mb-4 text-center font-semibold text-gray-700"> Agregar Producto </h1>
+      <div className='bg-gradient-to-r from-yellow-600 to-amber-400 h-full'>
+      <h1 className ="text-3xl  mb-4 text-center font-semibold text-gray-100 pt-5"> Agregar Producto </h1>
         
         <div className="flex justify-center mt-10">
           <div className=" W-full max-w-3xl">
@@ -102,7 +102,7 @@ const handleProgress = progreso =>{
             onSubmit={formik.handleSubmit}
           >
         
-
+            <div className='bg-white p-10 mb-4'>
             <div className="mb-4">
               <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="Producto">Nombre del Producto</label>
               <input
@@ -220,10 +220,11 @@ const handleProgress = progreso =>{
             className="bg-gray-800 hover:bg-gray-900 w-full mt-5 p-2 text-white uppercase font-bold"
             value="Agregar Producto"
            />
+           </div>
           </form>
           </div>
         </div>
-        
+        </div>
         </>
     );
 } 

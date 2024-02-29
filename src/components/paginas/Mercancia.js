@@ -36,7 +36,8 @@ useEffect(() => {
   };
   return ( 
         <>
-          <h1 className ="text-3xl font-semibold text-gray-700 mb-4 text-center"> 
+        <div className="bg-gradient-to-r from-yellow-600 to-amber-400 h-full">
+          <h1 className ="text-3xl font-semibold text-gray-100 mb-4 text-center pt-5"> 
           Productos
           </h1>
           <Link to='/NuevoProducto' className="ml-3 bg-yellow-800  hover:bg-black inline-block mb-5 p-2 text-white uppercase font-bold">
@@ -52,7 +53,7 @@ useEffect(() => {
                
               />
             ))}
-
+        </div>
         </>
     );
 }

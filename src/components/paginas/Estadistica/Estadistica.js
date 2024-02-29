@@ -33,8 +33,10 @@ const Estadistica = () => {
 
   return (
     <>
-      <h1 className="text-3xl font-light mb-4">Estadistica de Ventas</h1>
+    <div className="bg-gradient-to-r from-yellow-600 to-amber-400 h-full">
+      <h1 className="text-3xl font-bold mb-4 text-gray-100 text-center pt-5">Estadistica de Ventas</h1>
       <ProductoMasVendido ordenes={ordenes} />
+      </div>
     </>
   );
 };

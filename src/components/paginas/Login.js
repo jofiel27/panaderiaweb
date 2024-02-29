@@ -4,6 +4,7 @@ import { initializeApp } from "firebase/app";
 import firebaseConfig from "../../firebase/config";
 import { useNavigate } from "react-router";
 import Swal from "sweetalert2";
+import usuario from "../assets/usuario2.png"
 
 const Login = () => {
   const app = initializeApp(firebaseConfig);
@@ -39,13 +40,16 @@ const Login = () => {
   };
 
   return (
-    <div className="flex items-center justify-center h-screen">
-      <div className="bg-gray-100 p-8 rounded shadow-md w-96">
-        <h2 className="text-2xl font-bold mb-4">Iniciar Sesión</h2>
+    <div className="flex items-center justify-center h-screen bg-gradient-to-r from-yellow-600 to-amber-400">
+      <div className="bg-gray-100 p-8 rounded-xl shadow-md w-96 border-4 border-white">
+        <div className="flex items-center justify-center border-4 border-gray-100 ">
+       <img src={usuario} alt="100" />
+       </div>
+        <h2 className="text-2xl text-yellow-700 font-bold mb-4 text-center">Iniciar Sesión</h2>
 
         <div className="mb-4">
           <label
-            className="block text-gray-700 text-sm font-bold mb-2"
+            className="block text-yellow-700 text-sm font-bold mb-2"
             htmlFor="email"
           >
             Correo Electrónico
@@ -62,7 +66,7 @@ const Login = () => {
 
         <div className="mb-4">
           <label
-            className="block text-gray-700 text-sm font-bold mb-2"
+            className="block text-yellow-700 text-sm font-bold mb-2"
             htmlFor="password"
           >
             Contraseña
@@ -79,7 +83,7 @@ const Login = () => {
 
         <div className="flex justify-center">
           <button
-            className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 focus:outline-none m-auto"
+            className="bg-yellow-800 text-white py-2 px-4 rounded hover:bg-yellow-700 focus:outline-none m-auto"
             onClick={handleLogin}
           >
             Iniciar Sesión
